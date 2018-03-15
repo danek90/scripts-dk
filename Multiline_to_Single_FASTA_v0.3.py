@@ -7,7 +7,7 @@ import re
 
 # Stores file one for input checking.
 inFile  = sys.argv[1]
-outFile = inFile + ".out" 
+outFile = "s." + inFile 
 
 print ">> Opening FASTA file..."
 # Reads sequence file list and stores it as a string object. Safely closes file:
@@ -34,4 +34,6 @@ with open(outFile,"w") as newFasta:
 
 
 print ">> Multiline FASTA is now a Single Line FASTA."	
+
+print "\n>>> Opening", name, "fasta file..."
 
